@@ -1,0 +1,121 @@
+    body {
+        font-family: "Open+Sans", Helvetica, Arial, sans-serif;
+        color: #4d4d4d;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        margin: 0;
+        font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+    }
+    
+    nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #4d4d4d;
+        padding: 10px;
+    }
+    
+    nav select {
+        -webkit-appearance: none;
+        /* Remove estilo padrão do Chrome */
+        -moz-appearance: none;
+        /* Remove estilo padrão do FireFox */
+        appearance: none;
+        /* Remove estilo padrão do FireFox*/
+        background: url(http://www.webcis.com.br/images/imagens-noticias/select/ico-seta-appearance.gif) no-repeat #eeeeee;
+        /* Imagem de fundo (Seta) */
+        background-position: 218px center;
+        /*Posição da imagem do background*/
+        width: 250px;
+        /* Tamanho do select, maior que o tamanho da div "div-select" */
+        height: 30px;
+        /* Altura do select, importante para que tenha a mesma altura em todo os navegadores */
+        border: 1px solid #ddd;
+    }
+    
+    header {
+        background-image: url('../img/fundo.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        text-shadow: 3px 3px black;
+    }
+    
+    header div p {
+        margin-bottom: 2em;
+    }
+    
+    section {
+        padding: 20px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section div {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 30px;
+        border: medium solid black;
+        border-radius: 6px;
+        background-color: white;
+    }
+    
+    section div img {
+        max-width: 150px;
+    }
+    
+    footer {
+        text-align: right;
+        padding: 10px;
+        background-color: #4d4d4d;
+        color: #f1f1f1;
+    }
+    /*Media Queries*/
+    
+    @media screen and (min-width: 768px) {
+        header {
+            height: 600px;
+            height: 60vh;
+            justify-content: center;
+        }
+        section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section h2 {
+            text-align: center;
+            width: 100%;
+        }
+        section div {
+            flex-grow: 1;
+            flex-basis: 150px;
+            padding: 0 10px;
+            margin: 0 160px;
+        }
+        section div img {
+            width: 150px;
+        }
